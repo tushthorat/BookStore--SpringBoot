@@ -9,4 +9,9 @@ public class BookController {
         return "home";
     }
 
+    @GetMapping("/book_register")
+    public String book_resister(){
+        return "book_rester";
+    }
+
 }
