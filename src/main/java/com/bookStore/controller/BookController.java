@@ -20,10 +20,12 @@ public class BookController {
 
     @GetMapping("/available_books")
     public ModelAndView getAllBook() {
-        List<com.bookStore.entity.Book> list=service.getAllBook();
+        List<com.bookStore.entity.Book>list=service.getAllBook();
 //		ModelAndView m=new ModelAndView();
 //		m.setViewName("bookList");
 //		m.addObject("book",list);
         return new ModelAndView("bookList","book",list);
     }
+
+
 }
